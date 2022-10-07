@@ -1,0 +1,71 @@
+body {
+  background: url(album-cover-design.jpg);
+}
+h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content {
+  display: inline-block;
+  margin-top: 5%;
+}
+/* // button // */
+.starter-button {
+  font-family: "Inter", sans-serif;
+  border-radius: 4px;
+  background-color: RGB(153, 167, 238);
+  border: none;
+  color: RGB(255, 255, 255);
+  text-align: center;
+  font-size: 150%;
+  padding: 5px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 250px 5px 5px 5px;
+  z-index: 1;
+}
+.starter-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.starter-button span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.starter-button:hover span {
+  padding-right: 25px;
+}
+
+.starter-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* // Music_Info// */
+
+.info {
+  font-family: "Hammersmith One", sans-serif;
+  color: #000000;
+  display: inline-block;
+}
+.clicked {
+  position: relative;
+  top: 60%;
+  margin-top: 0;
+}
